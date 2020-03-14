@@ -128,7 +128,7 @@ int main()
     cout << "Thank you for playing! Goodbye.";
 }
 
-//function definitions
+//FUNCTION DEFINITIONS
 void gameOver(bool w, string l) {
     if (!w) { cout << "\nGAMEOVER! The word was: " << l; }
     else { cout << "\nCONGRATULATIONS YOU WON! THE WORD WAS: " << l; }
