@@ -128,7 +128,7 @@ int main()
     cout << "Thank you for playing! Goodbye.";
 }
 
-//FUNCTION DEFINITIONS
+//function definitions
 void gameOver(bool w, string l) {
     if (!w) { cout << "\nGAMEOVER! The word was: " << l; }
     else { cout << "\nCONGRATULATIONS YOU WON! THE WORD WAS: " << l; }
@@ -144,8 +144,8 @@ char chooseDifficulty() {
     char c;
     std::cout << "Enter e for easy, h for hard:";
     std::cin >> c;
-    return tolower(c);
-    }
+    return tolower(c); 
+}
 short choosePlayers() {
     short players{};
     std::cout << "Enter 1 for 1 player or 2 for 2 players:";
@@ -157,7 +157,8 @@ char playAgain() {
     cout << "\nWould you like to play again?(y/n):";
     cin >> temp;
     if (tolower(temp) =='y') { return temp; } 
-    return 'n'; }
+    return 'n'; 
+}
 void display(string s, int l, vector<char> vec) {
     string t{};
     for (auto c : vec) { t +=c; }
